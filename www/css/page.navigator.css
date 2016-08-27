@@ -1,9 +1,139 @@
 #ncontent {
-  left: 50%;
-  margin-left: -357px;
-  position: absolute;
-  width: 715px;
+	display: inline-block;
+	margin: 0 10%;
+	font-size: 15px;
+	line-height: 21px;
 }
-#navigators area {
-  cursor: pointer;
+
+h1 {
+	font-size: 32px;
+	margin-top: 32px;
+}
+
+.nav-system {
+	max-width: 420px;
+	height: 60px;
+	padding-left: 153px;
+	position: relative;
+}
+
+.nav-system__title {
+	display: inline-block;
+	margin-bottom: 4px;
+	line-height: 18px;
+}
+
+a.nav-system__title,
+.nav-system__link {
+	text-decoration: none;
+	color: #8a0;
+	border-bottom: 1px solid rgba(136, 170, 0, .3);
+	line-height: 18px;
+}
+
+.description {
+	max-width: 450px;
+}
+
+.nav-system_navitel {
+	height: 75px;
+}
+
+.nav-system_garmin {
+	height: 148px;
+	padding-left: 0;
+}
+
+.nav-system__logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+
+.nav-system_garmin .nav-system__logo {
+  height: 60px;
+	width: 190px;
+	position: relative;
+	margin-bottom: 8px;
+	background: url('../img/garmin-logo.png') top left no-repeat;
+}
+
+.nav-system_navitel .nav-system__logo {
+  height: 75px;
+	left: -6px;
+}
+
+.nav-system_navitel .nav-system__logo {
+	top: 2px;
+  height: 60px;
+	width: 141px;
+	background: url('../img/navitel-logo.png') top left no-repeat;
+}
+
+.nav-system_pocketgis .nav-system__logo {
+	top: -9px;
+  height: 60px;
+	width: 91px;
+	background: url('../img/pocketgis-logo.png') top left no-repeat;
+}
+
+.nav-system_cityguide .nav-system__logo {
+	top: 5px;
+	left: -1px;
+  height: 60px;
+	width: 129px;
+	background: url('../img/cityguide-logo.png') top left no-repeat;
+}
+
+.nav-system_progorod .nav-system__logo {
+	font-weight: bold;
+	letter-spacing: 1px;
+  height: 60px;
+	width: 155px;
+	padding: 7px 0 0 36px;
+}
+
+.nav-system_progorod .nav-system__logo::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+  height: 60px;
+	width: 31px;
+	background: url('../img/progorod-logo.png') top left no-repeat;
+	margin-right: 4px;
+}
+
+.nav-system_7ways .nav-system__logo {
+	left: -1px;
+	font-weight: bold;
+	font-size: 16px;
+  height: 60px;
+	width: 155px;
+	padding: 6px 0 0 38px;
+}
+
+.nav-system_7ways .nav-system__logo::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+  height: 60px;
+	width: 32px;
+	background: url('../img/7ways-logo.png') top left no-repeat;
+	margin-right: 4px;
+}
+
+.nav-system__updates {
+	color: #888;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.nav-system__link {
+	display: inline-block;
+	margin-right: 10px;
 }
