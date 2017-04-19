@@ -1,0 +1,81 @@
+<html>
+<head>
+
+<title>Предпросмотр иконок</title>
+
+<style>
+.toolbar {
+  background: #fff;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover {
+  background: #d8dadc;
+}
+
+.button_disabled:hover {
+  background: transparent;
+}
+
+.button_active,
+.button_active:hover {
+  background: #7d858c;  
+}
+
+.button-icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  fill: #444;
+}
+
+.button_disabled .button-icon {
+  opacity: .5;
+}
+
+.button_active .button-icon {
+  fill: #fff;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="toolbar">
+
+		<div class="button button_1">
+			<svg class="button-icon">
+				<use xlink:href="sprite.svg#icon-1-name"></use>
+			</svg>
+		</div>
+
+		<div class="button button_2 button_active">
+			<svg class="button-icon">
+				<use xlink:href="sprite.svg#icon-2-name"></use>
+			</svg>
+		</div>
+
+		<div class="button button_3 button_disabled">
+			<svg class="button-icon">
+				<use xlink:href="sprite.svg#icon-1-name"></use>
+			</svg>
+		</div>
+
+		<div class="button button_3 button_active">
+			<svg class="button-icon">
+				<use xlink:href="sprite.svg#icon-1-name"></use>
+			</svg>
+		</div>
+		
+	</div>
+</body>
+
+</html>

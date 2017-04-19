@@ -1,0 +1,37 @@
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+  .accent .background {
+    fill: #ffd112;
+  }
+  
+  .accent .content {
+    fill: #444;
+  }
+  
+  .secondary {
+    opacity: .3;
+  }
+  </style>
+  <defs>
+    <!-- What icon means and where used -->
+    <symbol id="icon-1-name" viewBox="0 0 16 16">
+      <rect class="secondary" x="3" y="2" width="2" height="9"/>
+      <rect class="secondary" x="8" y="2" width="2" height="9"/>
+      <rect class="secondary" x="12" y="2" width="2" height="9"/>
+      <rect class="primary" x="3" y="3" width="11" height="2"/>
+    </symbol>
+    
+    <!-- What icon means and where used -->
+    <symbol id="icon-2-name" viewBox="0 0 16 16">
+      <rect class="secondary" x="3" y="2" width="2" height="9"/>
+      <rect class="secondary" x="8" y="2" width="2" height="9"/>
+      <rect class="secondary" x="12" y="2" width="2" height="9"/>
+      <rect class="primary" x="3" y="3" width="11" height="2"/>
+      <g class="accent">
+        <rect class="background" x="8" y="8" width="7" height="7" ry="1"/>
+        <rect class="content" x="9" y="10" width="5" height="1"/>
+        <rect class="content" x="9" y="12" width="5" height="1"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
