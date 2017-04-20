@@ -34,4 +34,5 @@
       </g>
     </symbol>
   </defs>
+  <use xlink:href="#icon-1-name"></use>
 </svg>
