@@ -34,5 +34,9 @@
       </g>
     </symbol>
   </defs>
-  <use xlink:href="#icon-1-name"></use>
+  <g class="accent">
+    <rect class="background" x="8" y="8" width="7" height="7" ry="1"/>
+    <rect class="content" x="9" y="10" width="5" height="1"/>
+    <rect class="content" x="9" y="12" width="5" height="1"/>
+  </g>
 </svg>
