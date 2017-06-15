@@ -1,3 +1,19 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,blockquote,cite,code,del,dfn,img,ins,kbd,q,s,samp,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,main,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: top; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+body {  line-height: 1;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+  display: block;}
+ul {
+  list-style-type: none;}
+table {
+  border-collapse: collapse; border-spacing: 0;}
+img {
+  border: 0; max-width: 100%; height: auto;}
+strong {
+  font-weight: 700;}
+
+
 /*Основные параметры*/
 
 html,
@@ -54,7 +70,6 @@ img { border: none; }
   padding: 5px;
 }
 
-.button:hover  { outline: 4px solid #eee;}
 .button:active { border: 1px solid #fff; }
 
 
@@ -68,46 +83,59 @@ img { border: none; }
 }
 
 .field:hover,
-.field:focus { outline: 4px solid #eee; }
+.field:focus { outline: 1px solid #eee; }
 
 /*Основные элементы*/
 
-header {
+#header {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 90px;
+  height: 50px;
   box-shadow: rgba(138, 138, 138, 0.42) 0 9px 6px -4px;
   transition: 400ms;
   z-index: 1;
+	padding: 10px;
 }
 
 article[role=main] {
-  top: 90px;
+  top: 50px;
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
 }
 
-#colorline {
-  height: 4px;
-  position: absolute;
-  top: 86px;
-  width: 100%;
+#logo {
+	display: inline-block;
+	font-size: 0;
+	line-height: 32px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	height: 32px;
 }
 
-#logo {
-  left: 20px;
-  top: 30px;
-  position: absolute;
+#logo__sign {
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+#logo__openstreetmap {
+	font-size: 18px;
+	color: #000;
+	vertical-align: middle;
+}
+
+#logo__ru {
+	font-size: 18px;
+	color: #8a1;
+	vertical-align: middle;
 }
 
 #topbar {
-  top: 44px;
-  left: 0;
-  right: 0;
-  position: absolute;
 }
 
 /*MAIN MENU*/
@@ -117,10 +145,7 @@ label { cursor: pointer; }
 /* custom-dropdown */
 
 nav {
-  position:absolute;
-  width: 100%;
-  z-index: 1001; /*Cause of leaflet layers toggler with z-index=1000*/
-  background: #333;
+	float: right;
 }
     
 nav a,
@@ -129,43 +154,27 @@ nav label { text-decoration:none; }
 nav ul {
   padding: 0 20px;  
   margin: 0 auto;  
-  list-style:none;
+  list-style: none;
 }
 
 nav li {
   float: left;
-  padding-top: .15em;
-  width: 145px;
-  height: 28px;
-  background: #333;
-  border-top: solid 5px;
-  text-align:center;
+  padding: 0 10px;
+  text-align: center;
   transition: 400ms;
 }
 
-nav li:hover                     { color: #fff; }
-nav li:hover > a                 { color: #fff; }
+nav li:hover                     { color: #790; }
+nav li:hover > a                 { color: #790; }
 nav a {
-  color: #aaa;
+  color: #8a0;
   display: block;
   height: 100%;
 
 }
-nav span                         { color: #fff; }
+nav span { color: #8a0; }
 .htp nav { height: 9px; }
 .htp nav li:hover { height: 32px; }
 .htp nav li:hover * { display: block; }
-
-nav li:first-child    { border-top-color: #9b1; }
-nav li:nth-child(2)   { border-top-color: #fb1; }
-nav li:nth-child(3)   { border-top-color: #d41; }
-
-nav li:first-child:hover    { background: #9b1; }
-nav li:nth-child(2):hover   { background: #fb1; }
-nav li:nth-child(3):hover   { background: #d41; }
-
-nav li:first-child#current  { background: #9b1; }
-nav li:nth-child(2)#current { background: #fb1; }
-nav li:nth-child(3)#current { background: #d41; }
 
 nav li:not(#current)         { cursor: pointer; }

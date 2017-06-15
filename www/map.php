@@ -1,5 +1,9 @@
 <?
-$page_logo = "/img/logo.png";
+$page_logo = <<<PHP_PAGE_LOGO
+  <img src="/img/logo.svg" width="32" height="32" alt="OpenStreetMap.ru" id="logo__sign">
+	<span id="logo__openstreetmap">OpenStreetMap</span>
+	<span id="logo__ru">.ru</span>
+PHP_PAGE_LOGO;
 
 $page_head_css = <<<PHP_HEAD_CSS
   <link rel="stylesheet" href="/css/leaflet.css" />
@@ -25,19 +29,9 @@ $page_head_js = <<<PHP_HEAD_JS
 PHP_HEAD_JS;
 
 $page_topbar = <<<PHP_TOPBAR
-    <!--
-      <div id="breaking_news">
-        <a href="http://gisconf.ru/ru/" title="Открытые ГИС!">
-          <img src="/img/news/OpenGISavatar5eof.png" style="height: 100%;">
-        </a>
-      </div>
-    -->
-
       <div id="search_container">
         <form role="search" id="search" method="get" action="/" onsubmit="return osm.ui.searchsubmit();">
-          <div id="fucking_ff">
-            <input type="search" id="qsearch" class="field" name="q" autocomplete="off" autofocus="" placeholder="Искать">
-          </div>
+          <input type="search" id="qsearch" class="field" name="q" autocomplete="off" autofocus="" placeholder="Искать">
           <input type="submit" id="search_button" class="button" value="Найти">
         </form>
       </div>

@@ -47,17 +47,14 @@ include_once ($_URL[0].'.php');
   </script>
 </head>
 <body>
-  <nav role="navigation">
-    <? show_menu($pages_menu, $_URL[0]); ?>
-  </nav>
-  <header>
-    <a href="/">
-      <img src="<? print($page_logo); ?>" alt="OpenStreetMap.ru" id="logo">
+  <header id="header">
+    <a href="/" id="logo">
+      <? print($page_logo); ?>
     </a>
-    <div id="topbar">
-      <? print($page_topbar); ?>
-    </div>
-    <div id="colorline" style="background:<?=$current_menu['color']?>;"></div>
+    <? print($page_topbar); ?>
+		<nav role="navigation">
+			<? show_menu($pages_menu, $_URL[0]); ?>
+		</nav>
     <div id="ttoggle" class="button toggle" accesskey="t" onclick="osm.toppan_toggle();" style="display: none;">&uarr;</div>
   </header>
   <article role="main" id="content">
