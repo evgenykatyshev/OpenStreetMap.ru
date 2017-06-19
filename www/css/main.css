@@ -63,14 +63,19 @@ img { border: none; }
 /*Кнопки*/
 
 .button {
-  border: 0;
-  font-size: 12pt;
+	height: 32px;
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	border: 0;
+	border-radius: 0 3px 3px 0;
   text-align: center;
   color: #fff;
-  padding: 5px;
+  padding: 0px;
 }
 
-.button:active { border: 1px solid #fff; }
+.button:active {
+	
+}
 
 
 /*Поля*/
@@ -114,6 +119,7 @@ article[role=main] {
 	font-family: Arial, sans-serif;
 	text-decoration: none;
 	height: 32px;
+	margin-right: 10px;
 }
 
 #logo__sign {
@@ -152,8 +158,8 @@ nav a,
 nav label { text-decoration:none; }
     
 nav ul {
-  padding: 0 20px;  
-  margin: 0 auto;  
+  padding: 0 20px;
+  margin: 0 auto;
   list-style: none;
 }
 

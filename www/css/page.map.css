@@ -37,7 +37,7 @@
   top: 4px;
   left: 4px;
   width: 34px;
-  height: 34px;
+  height: 32px;
   padding: 0;
   background-image: url("/img/whereami.svg");
   -moz-box-sizing: border-box;
@@ -45,12 +45,22 @@
 }
 
 #search {
+	font-size: 0;
+	height: 32px;
+	vertical-align: top;
 }
   
 #qsearch {
 	display: inline-block;
 	width: 300px;
 	height: 32px;
+	padding: 2px 8px;
+  box-sizing: border-box;
+	border-radius: 3px 0 0 3px;
+	border-width: 1px 0 1px 1px;
+  border-style: solid;
+	border-color: #9b1;
+	font-size: 15px;
 }
 
 #search_button {
