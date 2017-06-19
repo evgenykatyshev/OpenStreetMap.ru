@@ -55,7 +55,7 @@ include_once ($_URL[0].'.php');
 		<nav role="navigation">
 			<? show_menu($pages_menu, $_URL[0]); ?>
 		</nav>
-    <div id="ttoggle" class="button toggle" accesskey="t" onclick="osm.toppan_toggle();" style="display: none;">&uarr;</div>
+    <!--<div id="ttoggle" class="button toggle" accesskey="t" onclick="osm.toppan_toggle();" style="display: none;">&uarr;</div>-->
   </header>
   <article role="main" id="content">
     <? print($page_content); ?>
