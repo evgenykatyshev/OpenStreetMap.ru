@@ -55,6 +55,7 @@ $(function() {
     osm.map.addControl(new L.Control.Locate({follow: true, stopFollowingOnDrag: true, locateOptions: {maxZoom: 16}}));
     osm.map.addControl(new L.Control.Distance());
     osm.map.addControl(new L.Control.permMarker());
+    osm.map.addControl(new L.Control.inJOSM());
 
     osm.validators.initialize();
     osm.poi.initialize();
@@ -77,8 +78,6 @@ $(function() {
     osm.opento();
     
     $('body').keypress(osm.keypress);
-    
-    osm.mapperMode.start();
   }
 
   // добавляем по умолчанию maxHeight для Popup у Marker

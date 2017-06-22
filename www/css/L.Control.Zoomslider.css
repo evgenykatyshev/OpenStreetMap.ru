@@ -1,26 +1,27 @@
 /** Slider **/
 .leaflet-control-zoomslider-wrap {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #fff;
 	border-bottom: 1px solid #ccc;
 }
 .leaflet-control-zoomslider-body {
-	width: 2px;
+	width: 40px;
 	border: solid #fff;
-	border-width: 0px 9px 0px 9px;
+	border-width: 0px 19px 0px 19px;
 	background-color: black;
 	margin: 0 auto;
 }
 .leaflet-control-zoomslider-knob {
 	position: relative;
-	width: 12px;
-	height: 4px;
-	background-color: #efefef;
+	width: 22px;
+	height: 10px;
+	background-color: #fff;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	border: 1px solid #000;
-	margin-left: -6px;
+	margin-left: -10px;
+	top: -2px;
 }
 .leaflet-control-zoomslider-body:hover {
 	cursor: pointer;
@@ -28,7 +29,7 @@
 .leaflet-control-zoomslider-knob:hover {
 	cursor: default;
 	cursor: -webkit-grab;
-	cursor:    -moz-grab;
+	cursor: -moz-grab;
 }
 
 .leaflet-dragging .leaflet-control-zoomslider,
@@ -48,8 +49,8 @@
 	margin-top: 10px;
 }
 .leaflet-control-zoomslider a {
-	width: 26px;
-	height: 26px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
 	text-decoration: none;
 	color: black;

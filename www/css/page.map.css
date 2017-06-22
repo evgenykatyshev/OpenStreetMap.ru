@@ -12,17 +12,11 @@
 
 /*ReStyling leaflet*/
 
-.leaflet-top > div.leaflet-control {
-  border-radius: 0;
-  box-shadow: none;
-  border:1px solid #999;    
-}
-
 .leaflet-control-zoom a,
 .leaflet-popup-content-wrapper              { border-radius: 0; }
 .leaflet-control-layers.leaflet-control     { margin-top: 30px; }
 
-.leaflet-control-layers a { background-image: url("/img/layers.png") !important; }
+.leaflet-control-layers a {  }
 
 
 /*Поисковая строка*/
@@ -115,14 +109,12 @@ article[role="main"] {
 }
 
 .leaflet-top.leaflet-left {
-  background-color: #99BD1B;
   padding-bottom: 5px;
   padding-right: 5px;
   padding-top: 50px;
 }
 
 .leaflet-left .leaflet-control {
-  margin-left: 5px;
 }
 
 .htp header { top:-85px; }
@@ -214,7 +206,6 @@ a.leaflet-control-distance-delete {
   display: inline-block !important;
 }
 
-.leaflet-control                        { box-shadow: none !important; }
 .leaflet-control-permalink              { margin-left: 5px !important; }
 a.leaflet-control-distance-active       { background-color: yellow; }
 a.leaflet-control-distance-active:hover { background-color: #ffa; }
@@ -367,7 +358,7 @@ a.leaflet-control-distance-active:hover { background-color: #ffa; }
 body .info_popup .technical {
   display: none;
 }
-body.mapperMode .info_popup .technical {
+body .info_popup .technical {
   display: block;
 }
 
@@ -391,21 +382,18 @@ body.mapperMode .info_popup .technical {
 body #leftvalidator {
   display: none;
 }
-body.mapperMode #leftvalidator {
+body #leftvalidator {
   display: block;
 }
 
 body .poi_popup .poi_osm_id {
   display: none;
 }
-body.mapperMode .poi_popup .poi_osm_id {
+body .poi_popup .poi_osm_id {
   display: table-row;
 }
 
 body #EditJOSM {
-  display: none;
-}
-body.mapperMode #EditJOSM {
   display: block;
 }
 

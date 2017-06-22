@@ -6,7 +6,7 @@ You can find the project at: https://github.com/domoritz/leaflet-locatecontrol
 */
 L.Control.Locate = L.Control.extend({
     options: {
-        position: 'topleft',
+        position: 'topright',
         drawCircle: true,
         follow: false,  // follow with zoom and pan the user's location
         stopFollowingOnDrag: false, // if follow is true, stop following when map is dragged (deprecated)

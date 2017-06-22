@@ -98,22 +98,6 @@ $page_content = <<<PHP_CONTENT
           </ul>
         </div>
       </div>
-      <div id="leftothers" class="leftgroup leftlink">
-        <h1>Другие инструменты</h1>
-        <div class="leftcontent" style="display: none;">
-          <ul>
-            <li><a onclick="osm.permalink.addMarker(); return false;" href='#'>Поставить маркер</a></li>
-            <li id="EditJOSM"><a href='#'>Редактировать (в JOSM)</a></li>
-            <li><a id="mapperMode" onclick="return osm.mapperMode.toggleChecked();" href='#'><ins class="checkbox"> </ins>Режим Маппера</a></li>
-          </ul>
-        </div>
-      </div><!--
-      <div id="leftosb" class="leftgroup leftlink">
-        <h1>Просмотреть неточности на карте</h1>
-        <div class="leftcontent" style="display: none;">
-          Внимание! Сейчас недоступено создание новых заметок, но вы можете помочь с закрытием уже существующих заметок. В дальнейшем будет переход на другую систему (Notes). Спасибо за участие.
-        </div>
-      </div>-->
       <div id="DidYouKnow" style="display: none;">
         <div class="head">Полезно знать</div>
         <div class="close"></div>

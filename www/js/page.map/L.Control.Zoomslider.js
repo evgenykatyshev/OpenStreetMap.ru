@@ -55,7 +55,7 @@ L.Control.Zoomslider = (function () {
 
 	var Zoomslider = L.Control.extend({
 		options: {
-			position: 'topleft',
+			position: 'topright',
 			// Height of zoom-slider.png in px
 			stepHeight: 8,
 			// Height of the knob div in px (including border)

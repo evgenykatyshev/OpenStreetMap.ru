@@ -1,6 +1,6 @@
 /* IE6-7 specific hacks */
 .leaflet-control-zoomslider-wrap {
-	*width: 26px;
+	*width: 40px;
 }
 /* Fix IE6-divs having a too large min height  */
 .leaflet-control-zoomslider-knob {
